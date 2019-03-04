@@ -9,7 +9,7 @@ Consider the following line of Java code:
 final ListMultimap<Foo, SetMultimap<Bar, Fizz>> barsWithFizzesBelongingToFoos =
     ArrayListMultimap.create();
 {% endhighlight %}
-```ListMultimap``` and ```SetMultimap``` are [Google Guava][guava_link] collections classes that
+`ListMultimap` and `SetMultimap` are [Google Guava][guava-link] collections classes that
 represent, repsectively, a ```Map``` whose values are ```List```'s and a ```Map``` whose values are ```Set```'s. In plain Java this would look something like:
 {% highlight java %}
 final Map<Foo, List<Map<Bar, Set<Fizz>>>> barsWithFizzesBeloingingToFoos =
@@ -73,4 +73,5 @@ This is all much tidier, and gives us a chance to hide some of the inner working
 This is no fun!
 
 High level programming languages work by expressing analogies about the real things (or closer to real things) happening when they run. These analogies represent the real happenings in a way that is hopefully understandable by the programmers and interpreted deterministically by the compiler or language interpreter. The latter is guaranteed (or close enough to guaranteed for our purposes) by the semantic rules of the language itself. The former is a constant struggle. Human languages also allow us to create analogies to real happenings (or, once again, closer to real), and their power lies in the extent to which they are expressive. The tools of human language expression are well beyond the study of computer programmers, but we can flatter ourselves that we can name a few: vocabulary, tone, grammar. Our tools for communicating our meaning to other human readers of our computer code are much more limited, but we have the great expressive technique of declaring new vocabulary elements: types, variables, functions, etc. We get to invent new phrases and declare them to have a precise meaning that must be understood by the reader as they continue through the text (French philosophers also love to do this). If creating new types feels difficult in a codebase, it hinders one of the few expressive tools we have.
-[guava_link]: https://github.com/google/guava
+
+[guava-link]: https://github.com/google/guava
