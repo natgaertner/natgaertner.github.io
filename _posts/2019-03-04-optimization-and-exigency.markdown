@@ -2,9 +2,11 @@
 layout: post
 title:  "Optimization and Exigency"
 date:   2019-03-04 20:23:45 +0000
+excerpt_separator: '<!--more-->'
 categories: programming 
 ---
 One of the great follies of programmers as a cultural unit is our tendency to see programming as an analogy for all other systems. The level of control software affords is seductive in the power it grants us. The progress of abstraction layers has brought us to a point where it is common to ignore all but the most cursory aspects of hardware, allowing our concerns to live entirely in the textual domain. This is a great relief. As a software developer nothing disturbs me more than having to confront the corporeality of my systems, as I once did when I heard that in order to solve our issue, a network router would have to be loaded on a truck and transported to the data center. It is tempting, modulo an occasional visceral shock, to privilege our lofty position as a sort of god perspective. Our systems, built only of text, are free to be molded to perfection. The friction between the blinding synapse and the tool is practically nil. No greater arena exists for genius to rise and make itself visible.
+<!--more-->
 
 Perhaps a contradiction is visible in the very description; the limitations of hardware and its stubborn residence in the physical world lurk behind trapdoors waiting to consume those who forget about them. Even so, a programmer is granted amazing freedom to create internally consistent systems, and mastery of all one perceives is hard to ignore. It is hardly surprising, then, that so many in the profession have so much difficulty acknowledging the limits of their expertise in areas beyond their software domains. This extends destructively to areas adjacent to their domain, in which they actively participate. To put a point on it: the race and gender bias of the programming profession is well known. A strain of bootstraps-style libertarianism runs through the culture, declaring that disparities can only be true reflections of deficiencies. Who can blame the programmers? After all, this is the environment in which they operate: the god perspective, the perfect transport of genius to page. A world of *optimization*.
 

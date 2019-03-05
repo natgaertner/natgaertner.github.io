@@ -2,9 +2,12 @@
 layout: post
 title:  "Continuous Deplivery of Capabilities"
 date:   2019-03-04 20:43:45 +0000
+excerpt_separator: '<!--more-->'
 categories: dev_ops
 ---
+
 The benefits of a frequent small release model, as opposed to an infrequent large release model, are well established among software development theorists. Incremental release of features allows each change to be more easily vetted for issues before reaching production and more easily diagnosed once issues do appear. Deploying to production ceases to be a disruptive event and becomes commonplace. CD recognizes that the comprehensibility of software is rapidly reduced as it grows in size, and correspondingly, the comprehensibility of software changes follows a similar pattern. Though we can chase perfection through more and more rigorous evaluation processes and rule sets, when the inevitable failure comes, it is better for it to appear in a small change than a big one. Though over time the rate of change of our software may be similar whether we deploy many small changes or few large changes, if the maximum instantaneous rate of change is kept low, the scope of damage that may be done at once is probabilistically kept low as well, and we spend more time "at risk" of gaining information from our changes being exercised in their production venue.
+<!--more-->
 
 This is all well established and generally accepted software dogma at companies with mature DevOps cultures. But as a builder of DevOps tools, I see a disturbing failure to extend this understanding to the capabilities provided to developers. Increasingly, the same risk aversion that drives fear of deployment: fear of the unknown, a distrust in the correctness of the overall system, offsetting this fear with attempts to exert more perfect control over the system via reactive monitoring and restriction; seems to manifest as a fear of the developer population itself. This fear leads to mandates to restrict the power placed in the hands of developers. Tools which would expand developer capabilities by abstracting away processes are considered suspect and are subject to demands for proof that the new abstraction precisely recreates the restrictions of the old process. Once created, new capabilities are reigned in by demands of full maturity before the developer population can be trusted with them. Where incremental delivery is asked for, it is an incremental delivery of capability with a full delivery of restriction and Foucauldian surveilance.
 

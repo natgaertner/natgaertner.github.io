@@ -2,6 +2,7 @@
 layout: post
 title:  "Types Ahoy (Declare More Types Please)"
 date:   2019-03-04 19:49:45 +0000
+excerpt_separator: '<!--more-->'
 categories: java
 ---
 Consider the following line of Java code:
@@ -21,6 +22,7 @@ final ListMultimap<Long, SetMultiMap<Long, String>> barsWithFizzesBelongingToFoo
     ArrayListMultimap.create();
 {% endhighlight %}
 We can maybe guess from the variable name what these primitive types are meant to be. They are probably some meaningful fields of the Foo, Bar, and Fizz classes, but even if this were discernable from the limited data we have here, it\'s a lot of extra work.
+<!--more-->
 
 Criticism is easy, but it\'s also easy to see how this nested collection type came to be used. As noted above, this probably represents a relationship that is not modeled natively by the objects, and there\'s a fair chance these objects are only arranged this way in this one instance. Cluttering up the Foo, Bar, and Fizz objects with this relationship might not make sense for the clarity of the code in those classes even if it would help here. Those objects also likely have a more natural relationship that is modeled, and adding another would confound a reader trying to figure out the core relationship among them. It would make an arrangement only relevant in this single context visible in all contexts. The worst thing we can do as programmers is make someone read more of our code when they otherwise wouldn\'t have to.
 

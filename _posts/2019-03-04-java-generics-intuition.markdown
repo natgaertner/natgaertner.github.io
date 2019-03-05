@@ -2,9 +2,11 @@
 layout: post
 title:  "Java Generics Intuition"
 date:   2019-03-04 20:33:45 +0000
+excerpt_separator: '<!--more-->'
 categories: java
 ---
 Almost all Java developers have encountered a mysterious error when working with Java generics. Sometimes it\'s just not remembering where to parameterize generic functions (right before the return type). Sometimes it\'s the surprising failures of Java\'s type interpolation in stream pipelines. Personally, gaining a working intuition for when \"extends\" and \"super\" will work and when they are appropriate has been one of my hardest tasks as a Java developer. Here I\'ll discuss how some of the simpler intuitions are modeled in my head, and perhaps that will be useful if you are encountering similar challenges.
+<!--more-->
 
 Examine this code:
 {% highlight java %}

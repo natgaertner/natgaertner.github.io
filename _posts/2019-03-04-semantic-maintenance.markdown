@@ -2,6 +2,7 @@
 layout: post
 title:  "Semantic Maintenance"
 date:   2019-03-04 20:13:45 +0000
+excerpt_separator: '<!--more-->'
 categories: programming 
 ---
 One of the great struggles of programming is to say what one means. We experience this problem at the language level consistently, as anyone can attest who has written:
@@ -15,6 +16,7 @@ return list.last();
 {% endhighlight %}
 
 (And if you have never screwed up the index when trying to get the last thing in a list, well I guess you are just more #blessed than us hoi polloi).
+<!--more-->
 
 Of course, sometimes this comes down to a matter of the language matching one's intuitive modeling. I obviously am prone to thinking I am correct that this Python function
 {% highlight python %}
